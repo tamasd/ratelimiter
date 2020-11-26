@@ -1,0 +1,17 @@
+language: go
+go:
+  - "1.15.x"
+  - tip
+
+matrix:
+  allow_failures:
+    - go: tip
+
+install:
+  - go get
+
+script:
+  - go test -race -p "$(nproc)" -coverprofile=coverage.txt -coverpkg=$(go list ./... | grep -v example) -covermode=atomic $(go list ./... | grep -v example)
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
