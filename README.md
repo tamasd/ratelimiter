@@ -2,7 +2,6 @@
 [![codecov](https://codecov.io/gh/tamasd/ratelimiter/branch/v1/graph/badge.svg)](https://codecov.io/gh/tamasd/ratelimiter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/tamasd/ratelimiter)](https://goreportcard.com/report/github.com/tamasd/ratelimiter)
 [![CodeFactor](https://www.codefactor.io/repository/github/tamasd/ratelimiter/badge)](https://www.codefactor.io/repository/github/tamasd/ratelimiter)
-[![Known Vulnerabilities](https://snyk.io/test/github/tamasd/ratelimiter/v1/badge.svg)](https://snyk.io/test/github/tamasd/ratelimiter)
 
 # Rate limiter middleware
 
