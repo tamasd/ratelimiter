@@ -62,6 +62,9 @@ func (cb *Bucket) Leak() {
 
 // Start starts the service.
 func (cb *Bucket) Start() {
+	defer func() {
+		cb.quitch = make(chan struct{})
+	}()
 	for {
 		select {
 		case input := <-cb.inputch:
@@ -77,5 +80,4 @@ func (cb *Bucket) Start() {
 // Stop stops the service.
 func (cb *Bucket) Stop() {
 	close(cb.quitch)
-	cb.quitch = make(chan struct{})
 }
