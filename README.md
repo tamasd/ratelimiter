@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tamasd/ratelimiter.svg?branch=v1)](https://travis-ci.org/tamasd/ratelimiter)
+[![Build Status](https://travis-ci.org/tamasd/ratelimiter.svg?branch=master)](https://travis-ci.org/tamasd/ratelimiter)
 [![codecov](https://codecov.io/gh/tamasd/ratelimiter/branch/v1/graph/badge.svg)](https://codecov.io/gh/tamasd/ratelimiter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/tamasd/ratelimiter)](https://goreportcard.com/report/github.com/tamasd/ratelimiter)
 [![CodeFactor](https://www.codefactor.io/repository/github/tamasd/ratelimiter/badge)](https://www.codefactor.io/repository/github/tamasd/ratelimiter)
