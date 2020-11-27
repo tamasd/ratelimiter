@@ -12,7 +12,7 @@ install:
   - go get
 
 script:
-  - go test -race -p "$(nproc)" -coverprofile=coverage.txt -coverpkg=$(go list ./... | grep -v example) -covermode=atomic $(go list ./... | grep -v example)
+  - go test -race -p "$(nproc)" -coverprofile=coverage.txt -covermode=atomic $(go list ./... | grep -v example)
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
